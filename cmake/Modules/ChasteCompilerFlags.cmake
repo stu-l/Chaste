@@ -1,13 +1,13 @@
 message(STATUS "Adding compiler flags...")
 
 # default flags added to all compilers except MSVC
-set(default_flags "-Wall")
+set(default_flags "-Wall -mavx2")
 if (Chaste_ERROR_ON_WARNING)
     set(default_flags "${default_flags} -Werror")
 endif()
 
 # Set the C++ Standard
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++17")
 
 set(default_exe_linker_flags "")
 if (UNIX)

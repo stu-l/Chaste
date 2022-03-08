@@ -36,7 +36,7 @@ cmake_minimum_required (VERSION 3.5.1)
 
 # Set standard to C++14. Note that CMake < 3.6 does not know how to set the standard flag for the Intel compiler, so
 # the ChasteCompilerFlags.cmake also sets the --std=c++14 flag, too.
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
